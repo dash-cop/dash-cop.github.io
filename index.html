@@ -269,7 +269,7 @@
               </p>
               <div class="has-text-centered">
                 <img src="./static/images/tr_comparison.png"
-                    alt="Detection without SAC module"
+                    alt="Evaluation of triple riding violation detection"
                     class="comparison-image"/>
               </div>
             </div>
@@ -284,12 +284,13 @@
               </p>
               <div class="has-text-centered">
                 <img src="./static/images/hv_comparison.png"
-                    alt="Detection with SAC module"
+                    alt="Evaluation of helmet rule violation detection"
                     class="comparison-image"/>
               </div>
             </div>
           </div>
         </div>
+
 
         <!-- Two-column comparison -->
         <div class="columns is-centered mb-0"> <!-- Added mb-0 to keep no bottom padding -->
@@ -302,7 +303,7 @@
               </p>
               <div class="has-text-centered">
                 <img src="./static/images/RM_assoc_comparison.png"
-                    alt="Detection without SAC module"
+                    alt="Evaluation of rider-motorcycle association"
                     class="comparison-image"/>
               </div>
             </div>
@@ -317,7 +318,40 @@
               </p>
               <div class="has-text-centered">
                 <img src="./static/images/tracking_comparison.png"
-                    alt="Detection with SAC module"
+                    alt="Evaluation of rider-motorcycle instance tracking"
+                    class="comparison-image"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Two-column comparison -->
+        <div class="columns is-centered mb-0"> <!-- Added mb-0 to keep no bottom padding -->
+          <!-- Left Column -->
+          <div class="column">
+            <div class="content">
+              <h2 class="title is-4">Evaluation Criteria for E-ticket Generation</h2>
+              <p>
+                For a given R-M track, the labelling (TP, FP, FN) at various stages of system is used to determine the final E-ticket level label of the track. E.g., a True Positive (TP) prediction at all stages is considered a TP for E-ticket generation system.
+              </p>
+              <div class="has-text-centered">
+                <img src="./static/images/eval_criteria.png"
+                    alt="Evaluation of e-ticket generation"
+                    class="comparison-image"/>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="column">
+            <div class="content">
+              <h2 class="title is-4">Overall E-ticket System Performance</h2>
+              <p>
+                The automated system achieves an F1-score of 72.18%, reflecting good overall performance. In practice, traffic enforcement personnel review E-Tickets and corresponding evidence before issuance. This human-in-the-loop approach eliminates false positives, raising the F1-score to 82.05%, improving system reliability.
+              </p>
+              <div class="has-text-centered">
+                <img src="./static/images/overall_perf.png"
+                    alt="Overall E-ticket system performance"
                     class="comparison-image"/>
               </div>
             </div>
@@ -373,28 +407,6 @@
 
           </div>
         </div>
-
-        <!-- Re-rendering. --> <!-- I MIGHT USE LATER IF WE INCLUDE A VIDEO HERE -->
-        <!-- <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div> -->
-        <!--/ Re-rendering. -->
-
     <br/>
 
     <!-- Concurrent Work. -->
@@ -415,7 +427,7 @@
 </section>
 
 
-<section class="section" id="BibTeX">
+<!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{xxxx,
@@ -425,13 +437,20 @@
   year      = {2025},
 }</code></pre>
   </div>
+</section> -->
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Reach out at</h2>
+    <pre><code>deepti.rawat@research.iiit.ac.in</code></pre>
+  </div>
 </section>
 
 
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link" href="./static/videos/#.pdf" disabled style="pointer-events: none; opacity: 0.6;">
+      <a class="icon-link" href="https://drive.google.com/file/d/1LS6rguUscRFpkGNnJhhwwCHCarbNNZOm/view?usp=sharing">
         <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"></path></svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com -->
       </a>
       <a class="icon-link" href="https://github.com/dash-cop/dash-cop.github.io" disabled="">
